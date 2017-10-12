@@ -9,6 +9,9 @@ function getIssues() {
 }
 
 function showIssues(json) {
+  const temp = Handlebars.complie(document.getElementById(`issues-template`).innerHTML);
+  var issue = template(json);
+  document.getElementById("issues").innerHTML += issue;
 }
 
 function createIssue() {
