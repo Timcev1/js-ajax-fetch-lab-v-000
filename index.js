@@ -36,7 +36,7 @@ function showResults(json) {
 }
 
 function forkRepo() {
-  const repo = 'https://api.github.com/repos/learn-co-curriculum/javascript-fetch-lab/issues'
+  const repo = 'https://api.github.com/repos/learn-co-curriculum/javascript-fetch-lab/forks'
   //use fetch to fork it!
   fetch(repo, {
     method: 'post',
