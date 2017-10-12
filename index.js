@@ -1,3 +1,5 @@
+const userName = ''
+
 function getIssues() {
   const repo = 'https://api.github.com/repos/learn-co-students/javascript-fetch-lab/issues'
   fetch(repo, {
