@@ -27,6 +27,8 @@ function createIssue() {
 }
 
 function showResults(json) {
+  const template = Handlebars.compile(document.getElementById("repo-template").innerHTML);
+document.getElementById('results').innerHTML = template(json)
 }
 
 function forkRepo() {
