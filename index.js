@@ -15,7 +15,7 @@ function showIssues(json) {
 }
 
 function createIssue() {
-  const repo = `https://api.github.com/repos/learn-co-curriculum/javascript-fetch-lab/issues`
+  const repo = `https://api.github.com/repos/${userName}/learn-co-curriculum/javascript-fetch-lab/issues`
   const data = {
     title: document.getElementById('title').value,
     body: document.getElementById('body').value }
