@@ -1,5 +1,5 @@
 function getIssues() {
-  const repo = `https://api.github.com/repos/learn-co-students/javascript-fetch-lab/issues`
+  const repo = `https://api.github.com/repos/learn-co-curriculum/javascript-fetch-lab/issues`
   fetch(repo, {
     method: 'get',
     headers: {
