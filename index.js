@@ -17,7 +17,7 @@ function showIssues(json) {
 function createIssue() {
   const repo = `https://api.github.com/repos/learn-co-curriculum/javascript-fetch-lab/issues`
   const data = { title: issueTitle, body: issueBody }
-   fetch(`${baseApi}repos/${fork}/issues`, {
+   fetch(repo, {
      method: 'post',
      headers: {
        'Authorization': `token ${getToken()}`
